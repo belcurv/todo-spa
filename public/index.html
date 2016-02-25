@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>ToDo SPA Example</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css"         />
+        
+        <!-- load angular and angular-route -->
+        <script src="js/vendor/angular.min.js"        ></script>
+        <script src="js/vendor/angular-route.min.js"  ></script>
+        <script src="js/vendor/angular-animate.min.js"></script>
+        <script src="js/app.js"                       ></script>
+    </head>
+    
+    <body ng-app="todoSpa">
+        
+        <header ng-controller="todoController">  <!-- loginController -->
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/"> Todo Single Page App </a>
+                    </div>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/login"> Login </a> </li>
+                        <li><a href="#/signup"> Sign Up </a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="container">
+            
+            <div ng-view> </div>
+        
+        </div>
+    </body>
+
+</html>
